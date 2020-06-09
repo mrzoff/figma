@@ -1,0 +1,406 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Figma</title>
+  <meta name="description" content="">
+  <meta name="author" content="PW">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <rect width="34" height="28" fill="url(#pattern0)"/>
+        <defs>
+        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0" transform="scale(0.00212314 0.00233645)"/>
+        </pattern>
+        <image id="image0" width="471" height="428" xlink:href="data:image/png;base64,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"/>
+        </defs>
+      </svg>     
+      <svg width="134" height="13" viewBox="0 0 134 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 12.9987H2.00256L2.66793 11.389H8.10069L8.76606 12.9987H10.7609L5.37591 0L0 12.9987ZM3.41469 9.59791L5.37591 4.83171L7.35393 9.59791H3.41469ZM17.7466 0.0251929H15.9159V12.9987H23.7129V11.2228H17.7453V0.0226713L17.7466 0.0251929ZM26.2491 1.79741H29.532V12.9962H31.3873V1.79741H34.6702V0.0226713H26.2491V1.79741ZM44.7024 0.0226713C43.8202 0.00654991 42.944 0.165761 42.127 0.490589C41.31 0.815416 40.5695 1.29905 39.9505 1.91202C39.3267 2.51134 38.8313 3.22559 38.4932 4.01323C38.1551 4.80086 37.981 5.64617 37.981 6.5C37.981 7.35383 38.1551 8.19914 38.4932 8.98678C38.8313 9.77442 39.3267 10.4887 39.9505 11.088C41.2142 12.3074 42.9204 12.9915 44.6985 12.9915C46.4766 12.9915 48.1828 12.3074 49.4465 11.088C50.0681 10.4875 50.5615 9.77282 50.8983 8.98534C51.235 8.19787 51.4084 7.35316 51.4084 6.5C51.4084 5.64684 51.235 4.80213 50.8983 4.01466C50.5615 3.22718 50.0681 2.51255 49.4465 1.91202C48.8286 1.29975 48.0894 0.816495 47.2738 0.49168C46.4582 0.166866 45.5833 0.00728648 44.7024 0.0226713ZM48.1907 9.89013C47.2567 10.7848 45.9996 11.2862 44.6901 11.2862C43.3806 11.2862 42.1236 10.7848 41.1895 9.89013C40.7319 9.44701 40.3687 8.92001 40.1209 8.33948C39.873 7.75896 39.7454 7.13637 39.7454 6.50756C39.7454 5.87876 39.873 5.25616 40.1209 4.67563C40.3687 4.0951 40.7319 3.5681 41.1895 3.12499C42.1211 2.22573 43.3791 1.72129 44.6901 1.72129C46.0011 1.72129 47.2591 2.22573 48.1907 3.12499C48.6508 3.56672 49.0163 4.09328 49.2657 4.67399C49.5151 5.25471 49.6435 5.87799 49.6435 6.50756C49.6435 7.13713 49.5151 7.76041 49.2657 8.34112C49.0163 8.92184 48.6508 9.44839 48.1907 9.89013ZM59.8301 0.0239321H56.5886V12.9975H58.4852V10.1005H59.8314C60.5164 10.1118 61.1966 9.98689 61.8303 9.73329C62.4641 9.47969 63.0382 9.10275 63.5174 8.62552C64.0011 8.1592 64.385 7.60398 64.6471 6.99201C64.9091 6.38004 65.044 5.72347 65.044 5.06032C65.044 4.39716 64.9091 3.74059 64.6471 3.12862C64.385 2.51665 64.0011 1.96143 63.5174 1.49511C63.0382 1.01788 62.4641 0.640943 61.8303 0.387342C61.1966 0.13374 60.5164 0.00880139 59.8314 0.0201574L59.8301 0.0239321ZM62.1828 7.3395C61.8765 7.64185 61.5107 7.88062 61.1072 8.04146C60.7038 8.2023 60.2711 8.28186 59.8353 8.27536H58.4891V1.85535H59.8353C60.2727 1.84706 60.707 1.92717 61.111 2.09062C61.5151 2.25407 61.88 2.49733 62.1828 2.80506C62.4987 3.09443 62.7488 3.44516 62.917 3.83459C63.0853 4.22401 63.1679 4.6435 63.1596 5.06598C63.1664 5.49012 63.0831 5.91104 62.915 6.3023C62.7469 6.69355 62.4976 7.04669 62.1828 7.3395ZM77.3765 8.63182C77.8601 8.1655 78.2441 7.61027 78.5061 6.9983C78.7681 6.38633 78.9031 5.72977 78.9031 5.06662C78.9031 4.40346 78.7681 3.74689 78.5061 3.13492C78.2441 2.52295 77.8601 1.96773 77.3765 1.50141C76.8973 1.02433 76.3235 0.647488 75.69 0.393892C75.0564 0.140295 74.3765 0.0152697 73.6917 0.0264537H70.3662V13H72.2628V10.103H74.2486L76.6284 13H79.0418L76.1995 9.49462C76.6302 9.2576 77.0275 8.96717 77.3816 8.63056L77.3765 8.63182ZM73.6917 8.27536H72.2628V1.85157H73.6905C74.1272 1.84331 74.5611 1.92281 74.9649 2.08511C75.3688 2.24742 75.7341 2.48906 76.038 2.79498C76.3469 3.09078 76.5923 3.44362 76.7598 3.83289C76.9273 4.22217 77.0135 4.64007 77.0135 5.0622C77.0135 5.48434 76.9273 5.90225 76.7598 6.29152C76.5923 6.68079 76.3469 7.03363 76.038 7.32942C75.733 7.63396 75.3675 7.87469 74.9639 8.03689C74.5603 8.1991 74.127 8.27938 73.6905 8.27284L73.6917 8.27536ZM90.875 0.0264537C89.9929 0.0103323 89.1166 0.169536 88.2997 0.494363C87.4827 0.819191 86.7421 1.30284 86.1231 1.91581C85.4993 2.51512 85.004 3.22936 84.6659 4.017C84.3278 4.80464 84.1537 5.64995 84.1537 6.50378C84.1537 7.35761 84.3278 8.20292 84.6659 8.99056C85.004 9.77819 85.4993 10.4924 86.1231 11.0918C87.3868 12.3112 89.0931 12.9953 90.8712 12.9953C92.6492 12.9953 94.3555 12.3112 95.6192 11.0918C96.2406 10.4911 96.7339 9.77648 97.0705 8.98902C97.4072 8.20156 97.5805 7.35689 97.5805 6.50378C97.5805 5.65067 97.4072 4.806 97.0705 4.01854C96.7339 3.23108 96.2406 2.51642 95.6192 1.91581C95.0012 1.30359 94.262 0.820373 93.4464 0.495563C92.6308 0.170752 91.7559 0.0111425 90.875 0.0264537ZM94.3711 9.89265C93.4371 10.7874 92.18 11.2887 90.8705 11.2887C89.561 11.2887 88.304 10.7874 87.3699 9.89265C86.9121 9.44962 86.5488 8.92265 86.3009 8.34211C86.0529 7.76156 85.9253 7.13893 85.9253 6.51007C85.9253 5.88122 86.0529 5.25859 86.3009 4.67805C86.5488 4.09751 86.9121 3.57054 87.3699 3.12751C88.3015 2.22825 89.5595 1.72381 90.8705 1.72381C92.1815 1.72381 93.4395 2.22825 94.3711 3.12751C94.8313 3.56924 95.1967 4.0958 95.4461 4.67651C95.6955 5.25723 95.8239 5.88051 95.8239 6.51007C95.8239 7.13964 95.6955 7.76293 95.4461 8.34364C95.1967 8.92436 94.8313 9.45091 94.3711 9.89265ZM102.769 0.0264537V13H104.578V6.24872L109.084 12.9987L113.582 6.24872V12.9987H115.39V0.0251929L109.075 9.35481L102.764 0.0226713L102.769 0.0264537ZM132.039 1.91581C130.772 0.700794 129.067 0.0198345 127.29 0.0198345C125.513 0.0198345 123.808 0.700794 122.541 1.91581C121.918 2.51512 121.422 3.22936 121.084 4.017C120.746 4.80464 120.572 5.64995 120.572 6.50378C120.572 7.35761 120.746 8.20292 121.084 8.99056C121.422 9.77819 121.918 10.4924 122.541 11.0918C123.805 12.3116 125.512 12.9959 127.29 12.9959C129.068 12.9959 130.775 12.3116 132.039 11.0918C132.66 10.4911 133.153 9.77648 133.49 8.98902C133.827 8.20156 134 7.35689 134 6.50378C134 5.65067 133.827 4.806 133.49 4.01854C133.153 3.23108 132.66 2.51642 132.039 1.91581ZM130.791 9.88634C129.857 10.7811 128.6 11.2824 127.29 11.2824C125.981 11.2824 124.723 10.7811 123.789 9.88634C123.332 9.44331 122.968 8.91635 122.72 8.33581C122.472 7.75527 122.345 7.13263 122.345 6.50378C122.345 5.87493 122.472 5.25229 122.72 4.67175C122.968 4.09121 123.332 3.56424 123.789 3.12121C124.721 2.22196 125.979 1.71751 127.29 1.71751C128.601 1.71751 129.859 2.22196 130.791 3.12121C131.251 3.56295 131.616 4.08949 131.866 4.67021C132.115 5.25093 132.243 5.87421 132.243 6.50378C132.243 7.13335 132.115 7.75663 131.866 8.33735C131.616 8.91806 131.251 9.44461 130.791 9.88634Z" fill="white"/>
+      </svg>
+      <span class="logo-text">- Верстка</span>
+    </div>
+  </header>
+  <div id="main">
+    <div class="container">
+      <div class="row mt-3 block-btn-modal">
+        <div class="col-xl-3 col-md-4 p-md-0 col-sm-12  pl-0">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+            Маленькое модальное окно
+          </button>
+        </div>
+        <div class="col-xl-2 offset-xl-4 col-md-3 offset-md-1 p-md-0 col-sm-12  pl-0">
+          <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#exampleModal2">
+            Модальное окно
+          </button>
+        </div>
+        <div class="col-xl-3 col-md-4 p-md-0 col-sm-12  pl-0">
+          <button type="button" class="btn btn-outline-primary float-right" data-toggle="modal" data-target="#exampleModal3">
+            Большое модальное окно
+          </button>
+        </div>
+      </div>
+
+      <div class="row mt-5 block-container">
+        <h1>Container</h1>
+        <div class="block-container-text">
+          <p>
+            Это базовый элемент в Bootstrap и они необходимы при использовании нашей стандартной сеточной системы. 
+            Контейнеры используются для размещения в них содержимого, дополнений и (иногда) центрирования 
+            содержимого внутри них. Хотя контейнеры могут быть вложенными, большинство макетов не требуют
+            вложенного контейнера.
+          </p>
+
+          <p>В Bootstrap используется три разных типа контейнеров:</p>
+          <ul>
+          <li>.container, который устанавливает максимальную ширину max-width в каждой отзывчивой точке останова;</li>
+          <li>.container-fluid, ширина которого width: 100% на всех точках останова;</li>
+          <li>.container-{breakpoint}, то есть ширина width: 100% до указанной точки останова.</li>
+          </ul>
+          <p>В приведенной ниже таблице показано, как максимальная ширина max-width каждого контейнера .container и .container-fluid сравнивается с исходными в каждой точке останова.</p>
+        </div>
+      </div>
+
+      <div class="row mt-5 block-arctiles">
+        <h1 class=>Heading Section</h1>
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-3">
+            <div class="card">
+              <img class="card-img-top" src="..." alt="">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row mt-5 block-table">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-active">
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr class="table-success">
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr class="table-info">
+                <th scope="row">5</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr class="table-warning">
+                <th scope="row">7</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+              <tr class="table-danger">
+                <th scope="row">9</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>    
+      </div>
+
+      <div class="row mt-5 block-table">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-5">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>                
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 block-pills">
+        <h1>Pills</h1>
+        <div class="block">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Active</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Disabled</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <p>Навигация в Bootstrap имеет общую для подобного типа элементов разметку, от базового класса .nav до активных и «выключенных» состояний. Заменяйте классы-модификаторы для переключения между стилями.</p>
+
+              <p>Базовый компонент класса .nav создан на флексбоксе, что обеспечивает хорошую базу для создания всех типов навигационных компонентов. В него входят несколько стилей, которые «перебивают» остальные (для работы со списками), добавлены паддинги ссылок для увеличения «зоны клика», и базовые стили «выключенных» состояний.</p>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <p>Навигация в Bootstrap имеет общую для подобного типа элементов разметку, от базового класса .nav до активных и «выключенных» состояний. Заменяйте классы-модификаторы для переключения между стилями.</p>
+
+              <p>Базовый компонент класса .nav создан на флексбоксе, что обеспечивает хорошую базу для создания всех типов навигационных компонентов. В него входят несколько стилей, которые «перебивают» остальные (для работы со списками), добавлены паддинги ссылок для увеличения «зоны клика», и базовые стили «выключенных» состояний.</p>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <p>Навигация в Bootstrap имеет общую для подобного типа элементов разметку, от базового класса .nav до активных и «выключенных» состояний. Заменяйте классы-модификаторы для переключения между стилями.</p>
+
+              <p>Базовый компонент класса .nav создан на флексбоксе, что обеспечивает хорошую базу для создания всех типов навигационных компонентов. В него входят несколько стилей, которые «перебивают» остальные (для работы со списками), добавлены паддинги ссылок для увеличения «зоны клика», и базовые стили «выключенных» состояний.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal1Label">Small modal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          One fine body…
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal2Label">New message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal3Label">Large modal</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          One fine body…
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

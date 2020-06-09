@@ -1,0 +1,42 @@
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 62px;
+    background: #075CB5;
+}
+
+.logo-text {
+    font-family: PT Sans;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.block-container-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.card-img-top {
+    height: 140px;
+    background-color: grey;
+}
+
+@media (min-width: 576px){
+    .block-btn-modal button {
+        float:left !important;
+        margin-top: 15px;
+    }
+}
