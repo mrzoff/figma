@@ -11,8 +11,7 @@ header {
 }
 
 .logo-text {
-    font-family: PT Sans;
-    font-style: italic;
+    font-family: PT_SansBoldItalic;
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 1px;
@@ -22,8 +21,6 @@ header {
 
 .block-container-text {
     font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
@@ -34,9 +31,16 @@ header {
     background-color: grey;
 }
 
-@media (min-width: 576px){
-    .block-btn-modal button {
-        float:left !important;
-        margin-top: 15px;
-    }
+@font-face {
+    font-family: "PT_SansBoldItalic"; 
+    src: url("../fonts/PT_Sans/PTSans-BoldItalic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Roboto"; 
+    src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
 }
